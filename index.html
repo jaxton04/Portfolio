@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>My awsome portfolio</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Poppins&display=swap" rel="stylesheet"
+</head>
+<body>
+	<header id="home">
+		<div class="container">
+		<nav class="flex items-center justify-between">
+			<div class="left flex items-center">
+				<div class="branding">
+					<img src="./images/logo.svg">
+
+				></div>
+				<div>
+					<a href="#home">Home</a>
+					<a href="#about">About</a>
+					<a href="#skills">Skills</a>
+					<a href="#contact">Contact</a>
+					
+				</div>
+
+
+			</div>
+			<div class="right ">
+				<button class="btn btn-primary">Contact</button>
+			</div>
+		</nav>
+		<div class="hero flex items-center justify-between">
+			<div class="left flex-1 flex justify-center">
+				<img src="./images/man.png">
+			</div>
+			<div class="right flex-1">
+				<h6>VishalnawiN</h6>
+
+				<h1>I'm a Creative <span>Designer</span></h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat.</p>
+				<div>
+					<button class="btn btn-secondary">Download cv</button>
+				</div>
+			</div>
+		</div>
+		</div>
+	</header>
+
+
+	<section id="about"class="about">
+		<div class="container flex items-center">
+			<div class="flex-1">
+				<img class="about-me-img" src="./images/man-2.png">
+			</div>
+			<div class="flex-1">
+				<h1>About <span>Me</span></h1>
+				<h3>Hello I'm VishalnawiN</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				</p>
+
+				<div class="social">
+					<a href="#"><img style ="height: 25px"src="./images/website.svg"></a>
+					<a href="#"><img style ="height: 25px"src="./images/facebook.svg"></a>
+					<a href="https://twitter.com/vishalnawinrk"><img style ="height: 25px"src="./images/twitter.svg"></a>
+					<a href="https://in.pinterest.com/vishalnawinrk/"><img style ="height: 25px"src="./images/pinterest.svg"></a>
+					<a href="https://instagram.com/__j.a.x.t.o.n__?utm_medium=copy_link"><img style ="height: 25px"src="./images/instagram.svg"></a>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+
+	    <!-- Skills section -->
+
+    <section class="skills" id="skills">
+        <div class="title">
+            <h2>Skills</h2>
+        </div>
+        <div class="main">
+            <div class="sub-title">
+                <h2>Web development</h2>
+            </div>
+            <div class="block">
+                <li>
+                    <h2>HTML</h2>
+                    <div class="bar">
+                        <span class="html"></span>
+                    </div>
+                </li>
+                <li>
+                    <h2>CSS</h2>
+                    <span class="bar"><span class="css"></span></span>
+                </li>
+                <li>
+                    <h2>Javascript</h2>
+                    <span class="bar"><span class="javascript"></span></span>
+                </li>
+                <li>
+                    <h2>SQL</h2>
+                    <span class="bar"><span class="sql"></span></span>
+                </li>
+            </div>
+
+            <div class="sub-title">
+                <h2>programming languages</h2>
+            </div>
+
+            <div class="block">
+                <li>
+                    <h2>C</h2>
+                    <span class="bar"><span class="c"></span></span>
+                </li>
+                <li>
+                    <h2>C++</h2>
+                    <span class="bar"><span class="cpp"></span></span>
+                </li>
+                <li>
+                    <h2>Java</h2>
+                    <span class="bar"><span class="java"></span></span>
+                </li>
+                <li>
+                    <h2>Python</h2>
+                    <span class="bar"><span class="python"></span></span>
+                </li>
+            </div>
+        </div>
+    </section>
+
+     <section class="contact" id="contact">
+        <div class="title">
+            <h2>Contact us</h2>
+        </div>
+        <!-- <div id="status" ></div> -->
+        <div class="main">
+       
+        <form class="form" id="my-form" action="https://formspree.io/f/xnqwvpwb" method="post">
+            <input type="text" name="Name" id="name" placeholder="Enter Name" class="textbox" required>
+            <input type="email" name="Email" id="email" placeholder="Enter E-mail" class="textbox" required>
+            <input type="number" name="Phoneno" id="phone" placeholder="Enter phone number" class="textbox" required>
+            <textarea  id="message" name="Message"  rows="10" class="textbox textarea" placeholder="Enter message " required></textarea>
+            <input type="submit" value="Submit" class="btn">
+        </form>
+    </div>
+    </section>
+</body>
+
+<script type="text/javascript">
+	var form = document.getElementById("my-form");
+
+    async function handleSubmit(event) {
+      event.preventDefault();
+      var data = new FormData(event.target);
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+      }).then(response => {
+        if (response.ok) {
+            form.reset()
+            alert("Thanks for your submission!");
+        } else {
+          response.json().then(data => {
+            if (Object.hasOwn(data, 'errors')) {
+                alert(data["errors"].map(error => error["message"]).join(", "));
+            } else {
+                alert("Oops! There was a problem in submitting your form");
+            }
+          })
+        }
+      }).catch(error => {
+        alert("Oops! There was a problem in submitting your form");
+      });
+    }
+    form.addEventListener("submit", handleSubmit);
+</script>
+</html>
